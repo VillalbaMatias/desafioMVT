@@ -10,9 +10,15 @@
 
 <body>
     <h1>
-        {%for objeto in objetos%}
-            <p> {{objeto.nombre}}, {{objeto.dni}}, {{objeto.fecha_nac}}, {{objeto.parentezco}}</p>
-        {% endfor%}
+        {% for objeto in objetos %}
+            <ol> 
+                <li>{{objeto.nombre}}</li>
+                <li>{{objeto.dni}}</li>
+                <li>{{objeto.fecha_nac}}</li>
+                <li>{{objeto.parentezco}}</li>
+
+            </ol>
+        {% endfor %}
 
     </h1>
 
