@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    <h1>
-        {% for objeto in objetos %}
-            <ol> 
-                <li>{{objeto.nombre}}</li>
-                <li>{{objeto.dni}}</li>
-                <li>{{objeto.fecha_nac}}</li>
-                <li>{{objeto.parentezco}}</li>
+    <h1>Familiares:</h1>
 
-            </ol>
+        {% for objeto in objetos %}
+            <ul style="list-style: none;"> 
+                <li>Nombre: {{objeto.nombre}}</li>
+                <li>DNI: {{objeto.dni}}</li>
+                <li>Fecha de Nacimiento: {{objeto.fecha_nac}}</li>
+                <li>Parentezco: {{objeto.parentezco}}</li>
+            </ul>
         {% endfor %}
 
-    </h1>
+    
 
 
 
